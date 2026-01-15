@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Template: https://github.com/luost26/academic-homepage -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Projects - Fahad Rahman Amik</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/academicons.min.css">
+    <link rel="stylesheet" href="src/css/google-fonts.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 80px;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .card {
+            border-radius: 0.5rem;
+        }
+        .border-gray {
+            border-color: #dee2e6;
+        }
+        .footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            border-top: 1px solid #dee2e6;
+        }
+        .project-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .project-item:last-child {
+            border-bottom: none;
+        }
+        .project-title {
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+        .project-description {
+            color: #495057;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+        .project-description ul {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+        }
+        .project-description li {
+            margin-bottom: 0.5rem;
+        }
+        .project-tech {
+            margin-top: 1rem;
+        }
+        .tech-badge {
+            display: inline-block;
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .project-highlight {
+            background-color: #fff3cd;
+            padding: 0.5rem 1rem;
+            border-left: 4px solid #ffc107;
+            margin-top: 0.75rem;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><strong>Fahad Rahman Amik</strong></a>
+            <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="papers.html">Publications</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-5">
+                        <h2 class="mb-4">Selected Projects</h2>
+                        
+                        <div class="project-item">
+                            <div class="project-title">
+                                Graph-Based Timing Prediction at Early-Stage RTL Using Large Language Models
+                            </div>
+                            <div class="project-description">
+                                <ul>
+                                    <li>Developed an RTL dataset generator to produce thousands of synthetic circuits, creating a diverse graph dataset.</li>
+                                    <li>Converted gate-level Verilog into a DAG capable of handling millions of nodes and utilized LLemma-7B to generate node and graph-level embeddings from technology files, which were in a mathematical format.</li>
+                                    <li>Implemented a GAT to enhance graph representation, leveraging graph-level features after global mean pooling and before passing them to the linear layer.</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">PyTorch</span>
+                                <span class="tech-badge">Graph Neural Networks</span>
+                                <span class="tech-badge">Large Language Models</span>
+                                <span class="tech-badge">Verilog</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-title">
+                                Generalizable and Relation Sensitive Netlist Representation for Analog Circuit Design
+                            </div>
+                            <div class="project-description">
+                                <ul>
+                                    <li>Proposed a novel heterogeneous graph representation for analog circuits.</li>
+                                    <li>An embedding lookup table for each component type in the circuit with weights learned through backpropagation.</li>
+                                    <li>Introduced a novel RL reward method to optimize the unmet metric when other metrics are met.</li>
+                                    <li>Solved the sample inefficiency issue, providing better generalization and enhanced knowledge transferability across different specifications and circuit topologies, and outstanding performance in zero-shot settings without further training.</li>
+                                </ul>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">PyTorch</span>
+                                <span class="tech-badge">Reinforcement Learning</span>
+                                <span class="tech-badge">Graph Neural Networks</span>
+                                <span class="tech-badge">Analog Circuit Design</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-title">
+                                RFID Based Smart Print Zone for NSU
+                            </div>
+                            <div class="project-description">
+                                <ul>
+                                    <li>Designed and developed an RFID-compatible printing system for centralized print zones to handle client requests.</li>
+                                    <li>Enabled users to print documents from home, offering a cost-effective alternative to conventional printing solutions.</li>
+                                    <li>Actively used by more than 30,000 students and faculty members at NSU.</li>
+                                </ul>
+                            </div>
+                            <div class="project-highlight">
+                                <strong>Acquired by NSU for 2 million BDT</strong>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-badge">PHP 7.4</span>
+                                <span class="tech-badge">Laravel 8</span>
+                                <span class="tech-badge">jQuery</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">RFID</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-title">
+                                Webapp for Impulse Hospital and a Full-Fledged HMS
+                            </div>
+                            <div class="project-description">
+                                <ul>
+                                    <li>Worked on a hospital management system, which encompasses accounting and billing services, prescription services, online physician services, human resource management, enhanced reporting system management, and an online pharmacy.</li>
+                                </ul>
+                            </div>
+                            <div class="project-highlight">
+                                <strong>Currently used by over 1,000 healthcare professionals and staff</strong>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-badge">PHP 8</span>
+                                <span class="tech-badge">Laravel 8</span>
+                                <span class="tech-badge">RESTful APIs</span>
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-title">
+                                RyoGas: A SaaS-Based Web Application
+                            </div>
+                            <div class="project-description">
+                                <ul>
+                                    <li>Developed a web application providing IoT solutions for automating the remote management of fuel stations.</li>
+                                    <li>A SaaS architecture to manage accounting, gas price adjustments, bank statements, gas stock, and monthly reports.</li>
+                                    <li>Integrated a POS app to record gas sales and print receipts.</li>
+                                </ul>
+                            </div>
+                            <div class="project-highlight">
+                                <strong>Currently in active use across more than 550 gas stations</strong>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-badge">PHP 7.4</span>
+                                <span class="tech-badge">Laravel 8</span>
+                                <span class="tech-badge">jQuery</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">IoT</span>
+                                <span class="tech-badge">SaaS</span>
+                                <span class="tech-badge">POS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-6">
+                    <div class="text-muted">
+                        <i>Last updated: Jan 2026</i>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-right text-muted">
+                        <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/popper.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+</body>
+</html>
