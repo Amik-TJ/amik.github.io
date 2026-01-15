@@ -230,7 +230,7 @@
             <div class="row my-3">
                 <div class="col-6">
                     <div class="text-muted">
-                        <i>Last updated: Jan 2026</i>
+                        <i>Last updated: <span id="last-updated">Jan 2026</span></i>
                     </div>
                 </div>
                 <div class="col-6">
@@ -246,5 +246,26 @@
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/popper.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
+    
+    <!-- Auto-update last commit date -->
+    <script>
+        // Fetch last commit date from GitHub API
+        fetch('https://api.github.com/repos/Amik-TJ/amik-tj.github.io/commits?per_page=1')
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.length > 0) {
+                    const commitDate = new Date(data[0].commit.author.date);
+                    const formattedDate = commitDate.toLocaleDateString('en-US', { 
+                        year: 'numeric', 
+                        month: 'short' 
+                    });
+                    document.getElementById('last-updated').textContent = formattedDate;
+                }
+            })
+            .catch(error => {
+                console.log('Could not fetch last commit date:', error);
+                // Keep the default date if API fails
+            });
+    </script>
 </body>
 </html>

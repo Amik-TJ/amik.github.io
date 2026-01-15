@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Template: https://github.com/luost26/academic-homepage -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <title>Fahad Rahman Amik | PhD Student | Machine Learning for EDA | Mila & McGill</title>
+    <meta name="description" content="Fahad Rahman Amik - PhD Student in Electrical & Computer Engineering at Mila - Quebec AI Institute and McGill University. Research in Machine Learning for Electronic Design Automation (ML for EDA), Graph Representation Learning, Timing Analysis, and Physical Design.">
+    <meta name="keywords" content="Fahad Rahman Amik, Amik, Fahad Amik, PhD Student, Machine Learning, EDA, Electronic Design Automation, Graph Neural Networks, Mila, McGill University, Research, ASPDAC, GLSVLSI, TVLSI, Timing Analysis, Physical Design, Graph Representation Learning, PyTorch, Deep Learning">
+    <meta name="author" content="Fahad Rahman Amik">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://amik-tj.github.io/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://amik-tj.github.io/">
+    <meta property="og:title" content="Fahad Rahman Amik | PhD Student | Machine Learning for EDA">
+    <meta property="og:description" content="PhD Student in Electrical & Computer Engineering at Mila - Quebec AI Institute and McGill University. Research in Machine Learning for Electronic Design Automation.">
+    <meta property="og:image" content="https://amik-tj.github.io/src/images/amik.png">
+    <meta property="og:site_name" content="Fahad Rahman Amik">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://amik-tj.github.io/">
+    <meta property="twitter:title" content="Fahad Rahman Amik | PhD Student | Machine Learning for EDA">
+    <meta property="twitter:description" content="PhD Student in Electrical & Computer Engineering at Mila - Quebec AI Institute and McGill University. Research in Machine Learning for Electronic Design Automation.">
+    <meta property="twitter:image" content="https://amik-tj.github.io/src/images/amik.png">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Fahad Rahman Amik",
+      "alternateName": "Amik",
+      "url": "https://amik-tj.github.io",
+      "image": "https://amik-tj.github.io/src/images/amik.png",
+      "jobTitle": "PhD Student",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Mila - Quebec AI Institute and McGill University"
+      },
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "McGill University"
+        },
+        {
+          "@type": "Organization",
+          "name": "Mila - Quebec AI Institute"
+        },
+        {
+          "@type": "Organization",
+          "name": "North South University"
+        }
+      ],
+      "email": "fahad.amik@mail.mcgill.ca",
+      "sameAs": [
+        "https://scholar.google.ca/citations?user=25HCyoIAAAAJ&hl=en",
+        "https://www.linkedin.com/in/fahadrahmanamik/",
+        "https://github.com/Amik-TJ"
+      ],
+      "knowsAbout": [
+        "Machine Learning",
+        "Electronic Design Automation",
+        "Graph Neural Networks",
+        "Deep Learning",
+        "Timing Analysis",
+        "Physical Design",
+        "Graph Representation Learning"
+      ]
+    }
+    </script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/css/academicons.min.css">
+    <link rel="stylesheet" href="src/css/google-fonts.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 80px;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .card {
+            border-radius: 0.5rem;
+        }
+        .text-profile-position {
+            color: #6c757d;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+        .text-profile-bio {
+            color: #495057;
+            line-height: 1.6;
+        }
+        .no-break {
+            white-space: nowrap;
+        }
+        .inline-badge {
+            height: 20px;
+            width: auto;
+            max-width: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+            object-fit: contain;
+        }
+        .pub-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: #78B9B5;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7em;
+            font-weight: bold;
+            z-index: 10;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        .badge-publication {
+            font-size: 0.75rem;
+            border-radius: 10rem;
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+        }
+        .badge-pill {
+            padding-right: 0.6em;
+            padding-left: 0.6em;
+            border-radius: 10rem;
+        }
+        .badge-info {
+            color: #fff;
+            background-color: #17a2b8;
+        }
+        .badge-success {
+            color: #fff;
+            background-color: #28a745;
+        }
+        .citation-badge {
+            display: inline-block;
+            margin-left: 0.25rem;
+        }
+        .border-gray {
+            border-color: #dee2e6;
+        }
+        .footer {
+            margin-top: 3rem;
+            padding: 2rem 0;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><strong>Fahad Rahman Amik</strong></a>
+            <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="papers.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-5">
+                        <div class="row">
+                            <div class="col">
+                                <div class="h1 font-weight-normal">
+                                    Fahad Rahman Amik
+                                </div>
+                                <div class="text-profile-position">
+                                    <img src="src/images/mila.png" alt="Mila" class="inline-badge"/>
+                                    <img src="src/images/mcgill.png" alt="McGill" class="inline-badge"/>
+                                    Mila - Quebec AI Institute and McGill University<br/>
+                          
+                                </div>
+                                <div class="text-profile-bio mt-3">
+                                    <p>
+                                        I am a PhD Student in Electrical & Computer Engineering at <a href="https://mila.quebec/">Mila - Quebec AI Institute</a> and <a href="https://www.mcgill.ca/">McGill University</a>, working with <a href="https://borisvaisband.wixsite.com/think-team">Prof. Boris Vaisband</a> and <a href="https://www.mcgill.ca/ece/warren-gross">Prof. Warren Gross</a>.
+                                        My research focuses on Machine Learning for Electronic Design Automation (ML for EDA), with particular interests in Graph Representation Learning, Timing Analysis, and Physical Design.
+                                    
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-auto">
+                                <figure class="figure">
+                                    <img 
+                                        src="src/images/amik.png" 
+                                        class="figure-img img-fluid img-thumbnail" 
+                                        style="height: 200px; border-radius: 50%;"
+                                        data-toggle="tooltip" 
+                                        data-placement="top" 
+                                        title="Fahad Rahman Amik"
+                                        alt="Fahad Rahman Amik"
+                                    >
+                                    <figcaption class="figure-caption text-right"></figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col">
+                                <a class="pr-3 no-break" href="mailto:fahad.amik@mail.mcgill.ca">
+                                    <i class="fas fa-at"></i> fahad.amik (at) mail.mcgill.ca
+                                </a>
+
+                                <a class="pr-3 no-break" target="_blank" href="https://scholar.google.ca/citations?user=25HCyoIAAAAJ&hl=en">
+                                    <i class="fab fa-google-scholar"></i> Google Scholar
+                                </a>
+
+                                <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/fahadrahmanamik/">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+
+                                <a class="pr-3 no-break" target="_blank" href="https://github.com/Amik-TJ">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+
+                                <a class="pr-3 no-break" target="_blank" href="src/Amik___Resume_25.pdf">
+                                    <i class="fas fa-file-alt"></i> CV
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card border-0 shadow-sm bg-white">
+                    <div class="card-body p-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-12 mx-2 my-1">
+                                        <h6>Education</h6>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="media mb-1">
+                                                <img src="src/images/mcgill.png" alt="McGill University" style="width: 18px;" class="mr-1 mt-1">
+                                                <div class="media-body">
+                                                    <div>Mila - Quebec AI Institute and McGill University</div>
+                                                    <div class="small">PhD Student in Electrical & Computer Engineering</div>
+                                                    <div class="small d-flex">
+                                                        <div>Topic: Machine Learning for Electronic Design Automation</div>
+                                                        <div class="mt-auto ml-auto no-break"><em>Jan. 2023 - Present</em></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="media mb-1">
+                                                <img src="src/images/nsu.png" alt="North South University" style="width: 18px;" class="mr-1 mt-1">
+                                                <div class="media-body">
+                                                    <div>North South University</div>
+                                                    <div class="small">Bachelor of Science in Computer Science & Engineering</div>
+                                                    <div class="small d-flex">
+                                                     
+                                                        <div class="mt-auto ml-auto no-break"><em>May 2017 - April 2021</em></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 mx-2 my-1">
+                                        <h6>Experience</h6>
+                                        <ul class="list-unstyled mb-1">
+                                            <li class="media mb-1">
+                                                <img src="src/images/huawei.png" alt="Huawei Technologies" style="width: 18px;" class="mr-1 mt-1">
+                                                <div class="media-body">
+                                                    <div>Noah's Ark Lab</div>
+                                                    <div class="small">Montreal, Canada</div>
+                                                    <div class="small">Associate ML Researcher, Intern</div>
+                                                    <div class="small d-flex">
+                                                        <div>Graph Representation Learning for Performance Prediction</div>
+                                                        <div class="mt-auto ml-auto no-break"><em>Dec. 2024 - June 2025</em></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="media mb-1">
+                                                <img src="src/images/huawei.png" alt="Huawei Technologies" style="width: 18px;" class="mr-1 mt-1">
+                                                <div class="media-body">
+                                                    <div>Noah's Ark Lab</div>
+                                                    <div class="small">Montreal, Canada</div>
+                                                    <div class="small">Associate ML Researcher, Intern</div>
+                                                    <div class="small d-flex">
+                                                        <div>Reinforcement Learning and Graph Neural Networks for Analog Transistor Sizing</div>
+                                                        <div class="mt-auto ml-auto no-break"><em>May 2023 - Oct. 2023</em></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="media mb-1">
+                                                <img src="src/images/hilinkz.png" alt="Hilinkz Ltd." style="width: 18px;" class="mr-1 mt-1">
+                                                <div class="media-body">
+                                                    <div>Hilinkz Ltd.</div>
+                                                    <div class="small">Dhaka, Bangladesh</div>
+                                                    <div class="small">Chief Executive Officer</div>
+                                                    <div class="small d-flex">
+                                                        <div>Led team, designed architecture, developed web applications</div>
+                                                        <div class="mt-auto ml-auto no-break"><em>Feb. 2021 - Dec. 2022</em></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            
+                                            <li class="media mb-1">
+                                                <img src="src/images/huru.png" alt="HURU Technologies" style="width: 18px;" class="mr-1 mt-1">
+                                                <div class="media-body">
+                                                    <div>HURU Technologies Ltd.</div>
+                                                    <div class="small">Dhaka, Bangladesh</div>
+                                                    <div class="small">Software Engineer Intern</div>
+                                                    <div class="small d-flex">
+                                                        <div>Developed web app for Digital Service Hiring Solution</div>
+                                                        <div class="mt-auto ml-auto no-break"><em>Oct. 2020 - Jan. 2021</em></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mx-2 my-1">
+                                    <h6>Honors & Awards</h6>
+                                    <ul class="list small pl-3 mb-1">
+                                        <li>
+                                            <div class="d-flex">
+                                                <div>DAC Young Fellow</div>
+                                                <div class="ml-auto mt-auto no-break"><em>2025</em></div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="d-flex">
+                                                <div>MEDA Award - McGill Engineering Doctoral Award</div>
+                                                <div class="ml-auto mt-auto no-break"><em>2023</em></div>
+                                            </div>
+                                        </li>
+                                        
+                                        <li>
+                                            <div class="d-flex">
+                                                <div>50% Merit-based Tuition Waiver, North South University</div>
+                                                <div class="ml-auto mt-auto no-break"><em>2017</em></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="mx-2 my-1 mt-4">
+                                    <h6>Research Interests</h6>
+                                    <ul class="list small pl-3 mb-1">
+                                        <li>Graph Representation Learning</li>
+                                        <li>Electronic Design Automation</li>
+                                        <li>Timing Analysis</li>
+                                        <li>Physical Design</li>
+                                        <li>Machine Learning for EDA</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
+            <h6 class="border-bottom border-gray p-3 mb-0">
+                <i class="fas fa-star"></i> Selected Publications 
+            </h6>
+            
+            <!-- Desktop版本 -->
+            <div class="d-none d-md-block">
+                <div class="row no-gutters border-bottom border-gray">
+                    <div class="col-md-3 col-xl-2 mb-md-0 p-md-3" style="position: relative;">
+                        <img data-src="src/images/aspdac.png" alt="Graph-Based Timing Prediction" class="w-100 rounded-sm" src="src/images/aspdac.png">
+                        <span class="pub-badge">ASPDAC</span>
+                    </div>
+                    <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+                        <h5 class="mt-0 mb-1 font-weight-normal">Graph-Based Timing Prediction at Early-Stage RTL Using Large Language Model</h5>
+                        <p class="mt-0 mb-0 small">
+                            <span class="text-body"><strong>F.R. Amik</strong>, </span>
+                            <span class="text-body">Y. Safari, </span>
+                            <span class="text-body">Z. Zhang, </span>
+                            <span class="text-body">B. Vaisband</span>
+                        </p>
+                        <p class="mt-0 mb-0 small">
+                            <i>Asia and South Pacific Design Automation Conference (ASPDAC)</i> 2025
+                        </p>
+                        <p class="mt-0 mb-0 small text-muted">Developed an RTL dataset generator and utilized LLemma-7B to generate embeddings for graph-based timing prediction at early-stage RTL design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile版本 -->
+            <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll; position: relative;">
+                <img data-src="src/images/aspdac.png" alt="Graph-Based Timing Prediction" class="card-img w-100" src="src/images/aspdac.png">
+                <span class="pub-badge">ASPDAC</span>
+                <div class="card-img-overlay d-flex align-items-start flex-column" style="background-color: rgba(255, 255, 255, 0.85);">
+                    <div class="mb-auto"></div>
+                    <div>
+                        <h5 class="mt-0 mb-1 font-weight-normal">Graph-Based Timing Prediction at Early-Stage RTL Using Large Language Model</h5>
+                        <p class="mt-0 mb-0 small">
+                            <span class="text-body"><strong>F.R. Amik</strong>, </span>
+                            <span class="text-body">Y. Safari, </span>
+                            <span class="text-body">Z. Zhang, </span>
+                            <span class="text-body">B. Vaisband</span>
+                        </p>
+                        <p class="mt-0 mb-0 small">
+                            <i>Asia and South Pacific Design Automation Conference (ASPDAC)</i> 2025
+                        </p>
+                        <p class="mt-0 mb-0 small text-muted d-none d-sm-block">Developed an RTL dataset generator and utilized LLemma-7B to generate embeddings for graph-based timing prediction at early-stage RTL design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop版本 -->
+            <div class="d-none d-md-block">
+                <div class="row no-gutters border-bottom border-gray">
+                    <div class="col-md-3 col-xl-2 mb-md-0 p-md-3" style="position: relative;">
+                        <img data-src="src/images/glsvlsi.png" alt="Generalizable Netlist Representation" class="w-100 rounded-sm" src="src/images/glsvlsi.png">
+                        <span class="pub-badge">GLSVLSI</span>
+                    </div>
+                    <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+                        <h5 class="mt-0 mb-1 font-weight-normal">Generalizable and Relation Sensitive Netlist Representation for Analog Circuit Design</h5>
+                        <p class="mt-0 mb-0 small">
+                            <span class="text-body">S. Penmetsa, </span>
+                            <span class="text-body"><strong>F.R. Amik</strong>, </span>
+                            <span class="text-body">Z. Zhang, </span>
+                            <span class="text-body">et al.</span>
+                        </p>
+                        <p class="mt-0 mb-0 small">
+                            <i>34th Great Lakes Symposium on VLSI (GLSVLSI)</i> 2024
+                        </p>
+                        <p class="mt-0 mb-0 small text-muted">Proposed a novel heterogeneous graph representation for analog circuits with enhanced generalization and knowledge transferability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile版本 -->
+            <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll; position: relative;">
+                <img data-src="src/images/glsvlsi.png" alt="Generalizable Netlist Representation" class="card-img w-100" src="src/images/glsvlsi.png">
+                <span class="pub-badge">GLSVLSI</span>
+                <div class="card-img-overlay d-flex align-items-start flex-column" style="background-color: rgba(255, 255, 255, 0.85);">
+                    <div class="mb-auto"></div>
+                    <div>
+                        <h5 class="mt-0 mb-1 font-weight-normal">Generalizable and Relation Sensitive Netlist Representation for Analog Circuit Design</h5>
+                        <p class="mt-0 mb-0 small">
+                            <span class="text-body">S. Penmetsa, </span>
+                            <span class="text-body"><strong>F.R. Amik</strong>, </span>
+                            <span class="text-body">Z. Zhang, </span>
+                            <span class="text-body">et al.</span>
+                        </p>
+                        <p class="mt-0 mb-0 small">
+                            <i>34th Great Lakes Symposium on VLSI (GLSVLSI)</i> 2024
+                        </p>
+                        <p class="mt-0 mb-0 small text-muted d-none d-sm-block">Proposed a novel heterogeneous graph representation for analog circuits with enhanced generalization and knowledge transferability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-6">
+                    <div class="text-muted">
+                        <i>Last updated: <span id="last-updated">Jan 2026</span></i>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-right text-muted">
+                        <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/popper.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    
+    <!-- Auto-update last commit date -->
+    <script>
+        // Fetch last commit date from GitHub API
+        fetch('https://api.github.com/repos/Amik-TJ/amik-tj.github.io/commits?per_page=1')
+            .then(response => response.json())
+            .then(data => {
+                if (data && data.length > 0) {
+                    const commitDate = new Date(data[0].commit.author.date);
+                    const formattedDate = commitDate.toLocaleDateString('en-US', { 
+                        year: 'numeric', 
+                        month: 'short' 
+                    });
+                    document.getElementById('last-updated').textContent = formattedDate;
+                }
+            })
+            .catch(error => {
+                console.log('Could not fetch last commit date:', error);
+                // Keep the default date if API fails
+            });
+    </script>
+</body>
+</html>
